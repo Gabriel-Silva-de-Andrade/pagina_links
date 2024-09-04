@@ -1,0 +1,83 @@
+@import url('./styles/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Raleway:wght@100..900&display=swap');
+@import url('./styles/main.css');
+@import url('./styles/header.css');
+@import url('./styles/banner.css');
+@import url('./styles/informativo.css');
+@import url('/styles/produtos.css');
+@import url('./styles/footer.css');
+
+:root {
+    --font-titulo: "Montserrat", sans-serif;
+    --font-texto: "Raleway", sans-serif;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    --verde-limão-escuro: #09201A;
+    --Verde-limão-acinzentado: #3B523E;
+    --Verde-acinzentado-escuro: #828A7D;
+    --amarelo-acinzentado-claro: #E0E0D4;
+    --laranja-forte: #BC7C00;
+    --branco-background: #FFFFFF;
+    --azul-claro: #3483FA;
+}
+
+body {
+    font-family: var(--font-texto);
+    font-size: 16px;
+    font-weight: var(--regular);
+    color: var(--verde-limão-escuro);
+    background-color: var(--branco-background);
+    display: grid;
+    row-gap: 2em;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+/*mobile*/
+@media screen and (max-width: 435px) {
+    .header {
+        grid-template-columns: 15% 85%;
+    }
+    .header__titulo {
+        padding-right: 0.8em;
+    }
+}
+/*Tablet*/
+@media screen and (min-width: 435px) and (max-width: 1024px) {
+    body {
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-areas: 
+            "header header header header"
+            ". main main ."
+            "footer footer footer footer"
+        ;
+    }
+}
+/*desktop*/
+@media screen and (min-width: 1025px) {
+    .banner {
+        padding: 3em;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "banner banner"
+            "informativo informativo"
+            "fogo agua"
+        ;
+        padding: 0 8em;
+    }
+    .fogo {
+        padding-inline-end: 1em;
+    }
+    .agua {
+        padding-inline-start: 1em;
+    }
+}

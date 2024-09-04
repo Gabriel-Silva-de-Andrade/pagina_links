@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    grid-area: footer;
+    height: auto;
+    padding: 1em;
+    background-color: var(--Verde-acinzentado-escuro);
+    color: var(--amarelo-acinzentado-claro);
+    font-size: 0.75em;
+    text-align: center;
+}
+.footer__missao-titulo {
+    font-family: var(--font-titulo);
+    font-weight: var(--bold);
+}
+.footer__missao-texto {
+    margin-top: 0.5em;
+}
+.margin-direitoAutoral {
+    margin-top: 0;
+}

@@ -1,0 +1,23 @@
+.header {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-area: header;
+    padding: 1em 1em;
+    background-color: var(--Verde-acinzentado-escuro);
+    grid-template-areas: 
+        "logo titulo titulo titulo ."
+    ;
+}
+.header__titulo {
+    font-family: var(--font-titulo);
+    font-size: 1.5em;
+    font-weight: var(--bold);
+    color: var(--amarelo-acinzentado-claro);
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    grid-area: logo;
+}

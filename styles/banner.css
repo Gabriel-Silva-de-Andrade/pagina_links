@@ -1,0 +1,29 @@
+.banner {
+    width: auto;
+    display: grid;
+    grid-area: banner;
+    grid-template-columns: 60% 40%;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: var(--amarelo-acinzentado-claro);
+}
+.banner__container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner__titulo {
+    font-family: var(--font-titulo);
+    font-weight: var(--bold);
+    color:  var(--Verde-limão-acinzentado);
+}
+.banner__text {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    font-weight: var(--regular);
+    color:  var(--Verde-limão-acinzentado);
+}
+.banner__imagem {
+    width: 90%;
+    justify-self: right;
+}

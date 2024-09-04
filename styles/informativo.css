@@ -1,0 +1,31 @@
+.informativo {
+    grid-area: informativo;
+}
+.informativo__selo {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+.informativo__selo-text {
+    font-weight: var(--regular);
+}
+.informativo__selo-img {
+    margin-left: 0.5em;
+    width: 12px;
+    height: 12px;
+}
+.informativo__loja {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+.informativo__loja-img {
+    width: 19px;
+    height: 13px;
+    margin-right: 0.5em;
+}
+.informativo__loja-text {
+    font-size: 0.75em;
+    font-weight: var(--regular);
+    color: var(--Verde-acinzentado-escuro);
+}
