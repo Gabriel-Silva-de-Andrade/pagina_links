@@ -37,17 +37,11 @@
     text-decoration: none;
     color: inherit;
 }
-.card__container-imagem {
-    width: 66px;
-    height: 66px;
-    border: 1.8px solid var(--Verde-acinzentado-escuro);
-    border-radius: 8px;
-}
 .card__imagem {
     width: 66px;
     height: 66px;
+    outline: 1.8px solid var(--Verde-acinzentado-escuro);
     border-radius: 8px;
-    border: 1.8px solid
 }
 .card__informacao {
     display: flex;
