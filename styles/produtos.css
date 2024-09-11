@@ -4,6 +4,9 @@
 .fogo {
     grid-area: fogo;
 }
+.caca-e-pesca {
+    grid-area: caca-e-pesca;
+}
 .card {
     list-style: none;
 }
